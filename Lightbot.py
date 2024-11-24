@@ -16,6 +16,8 @@ class Lightbot():
         """Main function of the game"""
         # Takes inputs for the lightbot game 
         self.cmd = input("Commands for lightbot: ")
+        # Show the 3D visualization of the terrain
+        self.terrain.display_terrain()
         # Evaluates each command and runs it
         for i in self.cmd:
             if i == "^":
